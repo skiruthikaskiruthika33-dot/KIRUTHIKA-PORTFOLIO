@@ -3,114 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Krithika S | ECE Portfolio</title>
+<title>Kiruthika S | Portfolio</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-    background:#f7f5ff;
-    color:#333;
+background:#f4f5f7;
+color:#333;
 }
 
 header{
-    background:white;
-    padding:15px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    position:sticky;
-    top:0;
+background:#0d1b5e;
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#6c4ab6;
+nav{
+display:flex;
+justify-content:center;
+gap:25px;
 }
 
 nav a{
-    text-decoration:none;
-    margin-left:15px;
-    color:#333;
-    font-weight:bold;
-}
-
-.hero{
-    text-align:center;
-    padding:100px 20px;
-    background:linear-gradient(135deg,#eee7ff,#ffffff);
-}
-
-.hero h1{
-    font-size:50px;
-    color:#51358c;
-}
-
-.hero h2{
-    color:#666;
-    margin:10px 0;
-}
-
-.hero p{
-    max-width:700px;
-    margin:auto;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#6c4ab6;
-    color:white;
-    text-decoration:none;
-    border-radius:25px;
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
 section{
-    padding:70px 8%;
+padding:40px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+color:#0d1b5e;
+margin-bottom:10px;
+}
+
+.hero h3{
+margin-bottom:15px;
+color:#444;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #2f62d6;
+margin-top:25px;
+}
+
+.line{
+width:90%;
+height:1px;
+background:#ccc;
+margin:40px auto;
 }
 
 .title{
-    text-align:center;
-    margin-bottom:30px;
-    color:#51358c;
+font-size:32px;
+color:#2f62d6;
+margin-bottom:20px;
 }
 
-.box{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
-    max-width:900px;
-    margin:auto;
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    justify-content:center;
+.card{
+background:white;
+max-width:900px;
+margin:15px auto;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 .skill{
-    background:#6c4ab6;
-    color:white;
-    padding:10px 15px;
-    border-radius:20px;
+background:white;
+padding:15px;
+margin:10px auto;
+max-width:350px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btns{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#2f62d6;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:#6c4ab6;
-    color:white;
+background:#0d1b5e;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
 }
 </style>
 </head>
@@ -118,10 +130,8 @@ footer{
 <body>
 
 <header>
-<div class="logo">Krithika S</div>
 <nav>
-<a href="#about">About</a>
-<a href="#education">Education</a>
+<a href="#about">About Me</a>
 <a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
@@ -129,94 +139,84 @@ footer{
 </header>
 
 <section class="hero">
-<div>
-<h1>Kiruthika S</h1>
-<h2>ECE Student</h2>
+<h1>Hi, I'm Kiruthika S</h1>
+<h3>B.E Electronics and Communication Engineering Student</h3>
+
 <p>
-Passionate Electronics and Communication Engineering student interested in VLSI, Embedded Systems, IoT and Core Electronics.
+Interested in VLSI, Embedded Systems, IoT and Core Electronics.
+I am passionate about learning new technologies and building innovative solutions.
 </p>
-<a href="#contact" class="btn">Contact Me</a>
-</div>
+
+<img src="IMG_20260714_163429.png" class="profile">
+
 </section>
+
+<div class="line"></div>
 
 <section id="about">
 <h2 class="title">About Me</h2>
-<div class="box">
-<p>
-I am studying final year Electronics and Communication Engineering student. I have knowledge in C, C++, Python, Arduino, IoT and Embedded Systems. My goal is to build a successful career in the core electronics industry.
-</p>
-</div>
-</section>
 
-<section id="education">
-<h2 class="title">Education</h2>
-<div class="box">
-<h3>B.E Electronics and Communication Engineering</h3>
-<p>Currently Pursuing - final Year</p>
+<div class="card">
+I am Kiruthika, an Electronics and Communication Engineering student with interest in VLSI, Embedded Systems, IoT and Core Electronics. I have knowledge in C, C++, Python, Arduino, MATLAB and IoT technologies.
 </div>
 </section>
 
 <section id="skills">
 <h2 class="title">Skills</h2>
-<div class="skills">
-<div class="skill">C</div>
+
+<div class="skill">C Programming</div>
 <div class="skill">C++</div>
 <div class="skill">Python</div>
 <div class="skill">Arduino</div>
-<div class="skill">IoT</div>
 <div class="skill">Embedded Systems</div>
+<div class="skill">IoT</div>
 <div class="skill">MATLAB</div>
-</div>
+<div class="skill">Communication & Teamwork</div>
+
 </section>
-    
+
 <section id="projects">
 <h2 class="title">Projects</h2>
 
-<h2 class="title"> Mini Projects</h2>
-
-<div class="box">
-
-<h3>Smart Flood Detection with SMS Notification using GSM Module</h3>
-
-<p>
-A smart flood detection and alert system designed to detect rising
-water levels and provide an early warning through SMS notification.
-The system uses sensors to monitor the water level and a GSM module
-to send an alert message to the concerned person when the water
-reaches a predefined level.
-</p>
-
-<p>
-The system also collects the location information of the detected
-flood condition, helping users identify the affected location and
-respond quickly during emergency situations.
-</p>
-
-<p>
-<strong>Technologies:</strong>
-Arduino, Water Level Sensor, GSM Module, GPS/Location Module,
-Embedded Systems and IoT.
-</p>
-
+<div class="card">
+Integrated Wearable Device for Health Monitoring using NodeMCU, Sensors and IoT Cloud Platform.
 </div>
+
+<div class="card">
+Smart Flood Monitoring Systems with SMS Notification Using GMS Module Projects.
+</div>
+
 </section>
-</p>
 
-</div>
+<section>
+<h2 class="title">Certifications</h2>
+
+<div class="skill">IBM Artificial Intelligence Fundamentals</div>
+<div class="skill">HTML Training at Spoken Tutorial Developed In IIT Bombay</div>
+<div class="skill">Python 3.4.3 Training at Spoken Tutorial In IIT Bombay</div>
+<div class="skill">Introduction of IOT</div>
+<div class="skill">VLSI Course Certification</div>
+<div class="skill">C++ at Cybernaut Tech</div>
+<div class="skill">Python Programming at Cybernaut Tech</div>
+<div class="skill">Java Programming at Cybernaut Tech</div>
 
 </section>
 
 <section id="contact">
-<h2 class="title">Contact Me</h2>
-<div class="box">
+<h2 class="title">Contact</h2>
+
 <p>Email: skiruthikaskiruthika33@gmail.com</p>
-<p>LinkedIn: https://www.linkedin.com/in/kiruthika-s-b04348292?utm_source=share_via&utm_content=profile&utm_medium=member_android</p>
-<p>GitHub: https://skiruthikaskiruthika33-dot.github.io/KIRUTHIKA-PORTFOLIO/</p>
+
+<div class="btns">
+<a href="https://github.com/" class="btn">Visit My GitHub</a>
+<a href="#" class="btn">Visit My LinkedIn</a>
+<a href="#" class="btn">View My Resume</a>
 </div>
+
 </section>
 
 <footer>
-<p>© 2026 Kiruthika S | Portfolio</p>
+© 2026 Kiruthika S | Portfolio
 </footer>
 
 </body>
